@@ -1,0 +1,5 @@
+debian-package-demo (1.0.0) bionic; urgency=medium
+
+  * New version
+
+ -- Some Name <some.name@email.com>  Thu, 24 Sep 2020 17:15:56 +0200

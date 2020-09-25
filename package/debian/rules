@@ -1,0 +1,21 @@
+#!/usr/bin/make -f
+
+SOURCE = $(CURDIR)/../src
+TARGET = $(CURDIR)/debian/debian-package-demo
+
+%:
+	dh $@
+
+override_dh_auto_build:
+	javac $(SOURCE)/DebianPackageDemo.java
+
+override_dh_auto_install:
+	# Created directory structure represents directories where files will be installed on a target machine.
+	mkdir -p $(TARGET)/usr/lib/debian-package-demo
+	mkdir -p $(TARGET)/lib/systemd/system
+	mkdir -p $(TARGET)/etc/sudoers.d/
+	cp $(SOURCE)/DebianPackageDemo.class $(TARGET)/usr/lib/debian-package-demo
+	cp $(SOURCE)/debian-package-demo-upgrade.sh $(TARGET)/usr/lib/debian-package-demo
+	cp $(SOURCE)/debian-package-demo.service $(TARGET)/lib/systemd/system
+	cp $(SOURCE)/debian-package-demo-sudoers $(TARGET)/etc/sudoers.d
+

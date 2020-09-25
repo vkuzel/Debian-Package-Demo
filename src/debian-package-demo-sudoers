@@ -1,0 +1,1 @@
+debian-package-demo ALL=NOPASSWD: /usr/bin/apt -y upgrade debian-package-demo

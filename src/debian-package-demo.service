@@ -1,0 +1,16 @@
+[Unit]
+Description=Debian Package Demo application
+
+[Service]
+User=debian-package-demo
+# Application is installed in following directory.
+WorkingDirectory=/usr/lib/debian-package-demo/
+
+ExecStart=/usr/bin/java DebianPackageDemo
+
+# Successful exit code of JVM is not 0, but 143
+SuccessExitStatus=143
+
+[Install]
+WantedBy=multi-user.target
+

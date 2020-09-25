@@ -1,0 +1,10 @@
+Source: debian-package-demo
+Maintainer: Some Name <some.name@email.com>
+Build-Depends: debhelper (>= 9), openjdk-11-jdk (>= 11)
+Standards-Version: 3.9.8
+
+Package: debian-package-demo
+Architecture: any
+Depends: openjdk-11-jre (>= 11)
+Description: Debian Package Demo application.
+ More description of Debian Package Demo application.
