@@ -2,11 +2,11 @@
 
 serviceName=debian-package-demo
 
-adduser --system debian-package-demo --home /usr/lib/debian-package-demo
+adduser --quiet --system debian-package-demo --home /usr/lib/debian-package-demo
 
 systemctl daemon-reload
 if ! systemctl is-active --quiet ${serviceName}; then
-	echo "Starting ${serviceName}..."
+	echo "Starting ${serviceName} service..."
 	systemctl start ${serviceName}
 fi
 
