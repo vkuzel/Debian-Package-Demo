@@ -15,6 +15,7 @@ fi
 systemctl daemon-reload
 if ! systemctl is-active --quiet ${serviceName}; then
 	echo "Starting ${serviceName} service..."
+	systemctl enable ${serviceName}
 	systemctl start ${serviceName}
 fi
 
