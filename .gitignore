@@ -8,5 +8,5 @@
 /package/debian/debian-package-demo*
 
 # IntelliJ IDEA
-/*/.idea
-/*/*.iml
+/.idea
+/*.iml
