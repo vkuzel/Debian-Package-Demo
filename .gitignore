@@ -5,9 +5,6 @@
 /debian-package-demo*
 /package/debian/debian-package-demo
 
-# Packages in repository
-/repository/*
-
 # IntelliJ IDEA
 /*/.idea
 /*/*.iml
