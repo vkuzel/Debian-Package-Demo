@@ -3,7 +3,9 @@
 
 # Generated packages & package files
 /debian-package-demo*
-/package/debian/debian-package-demo
+/package/debian/.debhelper/*
+/package/debian/files
+/package/debian/debian-package-demo*
 
 # IntelliJ IDEA
 /*/.idea

@@ -3,13 +3,12 @@ set -e
 
 baseDir=$(dirname "$0")
 
-pushd ${baseDir}
+pushd ${baseDir}/repository
 
-# Move generated packages to repository directory.
-mv debian-package-demo* repository/
+# Move generated package files to repository directory.
+mv ../debian-package-demo* .
 
 # Generate repository index file.
-cd ${baseDir}/repository
 dpkg-scanpackages -m . /dev/null > Packages
 
 popd
