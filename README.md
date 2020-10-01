@@ -1,6 +1,6 @@
 # Debian Package Demo
 
-Supporting demo application for the article [Upgrade Debian package from included systemd service](https://vkuzel.com/upgrade-debian-package-from-included-systemd-service) which describes how to upgrade the package from within a systemd service installed by the package itself.
+Supporting demo application for the article [Upgrade Debian package from systemd service](https://vkuzel.com/upgrade-debian-package-from-systemd-service) which describes how to upgrade the package from within a systemd service installed by the package itself.
 
 The project contains several handy scripts:
 
